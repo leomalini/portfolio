@@ -46,16 +46,14 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "flex fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-40 pr-4 pl-4 py-2 items-center justify-between w-full max-w-sm",
+          "flex fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full bg-card shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-40 pr-4 pl-4 py-2 items-center justify-between w-full max-w-sm",
           className
         )}
       >
-        {/* Ícone de Home - Apenas em telas pequenas */}
         <Link href="/" className="sm:hidden">
           <Home className="size-5" />
         </Link>
 
-        {/* Links - Apenas em telas médias ou maiores */}
         <div className="hidden sm:flex space-x-4">
           {navItems.map((navItem, idx) => (
             <Link
@@ -68,7 +66,6 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
           ))}
         </div>
 
-        {/* Ícones (Globe, ModeToggle, Menu) - Sempre visíveis em telas pequenas */}
         <div className="flex items-center space-x-4">
           <Globe className="size-5" />
           <ModeToggle />
