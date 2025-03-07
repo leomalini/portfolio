@@ -60,10 +60,8 @@ export const Experiences = () => {
                 </div>
                 <Timeline>
                   <TimelineItem>
-                    <TimelineHeading>
-                      <p className="font-semibold text-lg text-foreground">
-                        {item.position.title}
-                      </p>
+                    <TimelineHeading className="font-semibold text-lg text-foreground">
+                      {item.position.title}
                     </TimelineHeading>
                     <TimelineDot
                       status={item.position.active ? "done" : "default"}

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { FloatingNav } from "@/components/ui/navbar";
+import { navItems } from "@/utils/nav-items";
+import Footer from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +37,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <FloatingNav navItems={navItems} />
+          <main className="min-h-screen flex flex-col gap-6  items-center justify-center space-y-12 px-10 py-10 pt-20 md:pt-32">
+            {children}
+          </main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

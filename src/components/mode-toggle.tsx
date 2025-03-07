@@ -20,9 +20,9 @@ export function ModeToggle() {
       className="rounded-full"
     >
       {resolvedTheme === "dark" ? (
-        <Sun className="size-5 transition-all" />
+        <Sun className="size-5" />
       ) : (
-        <Moon className="size-5 transition-all" />
+        <Moon className="size-5" />
       )}
       <span className="sr-only">Toggle theme</span>
     </Button>
