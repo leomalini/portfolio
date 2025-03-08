@@ -2,8 +2,6 @@ import { type ProjectCardProps } from "@/types/project-card.type";
 
 export const projects: ProjectCardProps[] = [
   {
-    isDeployed: false,
-    urlSite: "",
     img: "/images/NLW.png",
     title: "NLW Connect",
     description:
@@ -12,8 +10,6 @@ export const projects: ProjectCardProps[] = [
     urlRepository: "https://github.com/leomalini/NLW-Connect",
   },
   {
-    isDeployed: false,
-    urlSite: "",
     img: "/images/Contatos.png",
     title: "Sistema de Cadastro de Contatos",
     description:
@@ -22,7 +18,6 @@ export const projects: ProjectCardProps[] = [
     urlRepository: "https://github.com/leomalini/Sistema-CadastroContatos",
   },
   {
-    isDeployed: true,
     urlSite: "https://meuprojeto3.com",
     img: "/images/portfolioImg.png",
     title: "Portfólio Pessoal",

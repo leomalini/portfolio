@@ -1,6 +1,5 @@
 export interface ProjectCardProps {
-  urlSite: string;
-  isDeployed: boolean;
+  urlSite?: string;
   img: string;
   title: string;
   description: string;
