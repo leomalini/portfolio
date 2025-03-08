@@ -28,9 +28,7 @@ export const About = () => {
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground mt-4 max-w-lg text-center">
-              Welcome to my over-engineered personal blog where I write about
-              software engineering, productivity, and other stupid stuff. Also,
-              it&apos;s my portfolio.
+            Bem-vindo ao meu portfólio, onde apresento meus projetos, habilidades e experiências.
             </p>
           </motion.div>
         </div>
