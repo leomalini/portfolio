@@ -16,8 +16,7 @@ export const Experiences = () => {
   return (
     <section id="experiences" className="container">
       <div className="flex flex-col  gap-8 md:gap-12 items-center justify-center">
-        <p className="text-start w-full font-bold text-4xl">Experiencias</p>
-        {/* TODO componentizar esses elementos */}
+        <p className="text-start w-full font-bold text-4xl">Experiências</p>
         <Tabs
           defaultValue="globalsys"
           orientation="vertical"
