@@ -9,11 +9,10 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { ModeToggle } from "../mode-toggle";
-import { Globe, Menu, Home } from "lucide-react";
+import { Menu, Home } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./sheet";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { type FloatingNavProps } from "@/types/floating-nav.type";
-import { Button } from "./button";
 import { LangSwitcher } from "../language-switcher";
 
 export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
