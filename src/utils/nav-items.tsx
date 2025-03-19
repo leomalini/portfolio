@@ -1,20 +1,24 @@
-import { EmailIcon } from "@/components/icons/email-icon";
+import { ExperienceIcon } from "@/components/icons/experience-icon";
+import { HomeIcon } from "@/components/icons/home-icon";
+import { TechIcon } from "@/components/icons/tech-icon";
 import { type NavItemProps } from "@/types/nav-items.type";
 
 export const navItems: NavItemProps[] = [
   {
     name: "Home",
     link: "/",
-    icon: <EmailIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <HomeIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
-    name: "Sobre mim",
-    link: "#sobre",
-    icon: <EmailIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    name: "Experiências",
+    link: "#experiences",
+    icon: (
+      <ExperienceIcon className="h-4 w-4 text-neutral-500 dark:text-white" />
+    ),
   },
   {
     name: "Tecnologias",
     link: "#tech",
-    icon: <EmailIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <TechIcon className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
 ];

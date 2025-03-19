@@ -13,7 +13,6 @@ import { Menu, Home } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./sheet";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { type FloatingNavProps } from "@/types/floating-nav.type";
-import { LangSwitcher } from "../language-switcher";
 
 export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
   const { scrollYProgress } = useScroll();
@@ -68,7 +67,7 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <LangSwitcher />
+          {/* <LangSwitcher /> */}
           <ModeToggle />
           <Sheet>
             <SheetTrigger className="sm:hidden">
