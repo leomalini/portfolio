@@ -18,13 +18,22 @@ export const projects: ProjectCardProps[] = [
     urlRepository: "https://github.com/leomalini/Sistema-CadastroContatos",
   },
   {
-    urlSite: "https://meuprojeto3.com",
+    urlSite: "https://leonardocoradini.vercel.app/",
     img: "/images/portfolioImg.png",
     title: "Portfólio Pessoal",
     description:
       "Meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências.",
     techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
     urlRepository: "https://github.com/leomalini/portfolio",
+  },
+  {
+    urlSite: "https://manzoli-services.vercel.app/",
+    img: "/images/Manzoli.png",
+    title: "Manzoli Services",
+    description:
+      "Site institucional desenvolvido para a empresa Manzoli Services, especializada em limpeza residencial. O projeto apresenta os serviços oferecidos, diferenciais da empresa e permite fácil contato com os clientes. Totalmente responsivo e otimizado para performance.",
+    techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+    urlRepository: "",
   },
 ];
 

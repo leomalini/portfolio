@@ -51,13 +51,15 @@ export const ProjectCard = ({
             <ExternalLink className="size-8" />
           </Link>
         )}
-        <Link
-          href={urlRepository}
-          target="_blank"
-          className="bg-muted p-2 rounded-full dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition-all duration-300 hover:scale-105"
-        >
-          <GitHubIcon />
-        </Link>
+        {urlRepository && (
+          <Link
+            href={urlRepository}
+            target="_blank"
+            className="bg-muted p-2 rounded-full dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white transition-all duration-300 hover:scale-105"
+          >
+            <GitHubIcon />
+          </Link>
+        )}
       </div>
     </div>
   );

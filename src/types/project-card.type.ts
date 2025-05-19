@@ -4,5 +4,5 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   techs: string[];
-  urlRepository: string;
+  urlRepository?: string;
 }
