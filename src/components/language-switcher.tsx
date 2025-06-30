@@ -3,19 +3,24 @@
 import React, { useState } from "react";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function LangSwitcher() {
-  const [language, setLanguage] = useState("pt");
+  const { language, setLanguage } = useLanguage();
   const [showFlag, setShowFlag] = useState(false);
 
   const handleToggleLanguage = () => {
-    const nextLanguage = language === "pt" ? "en" : "pt";
+    // Mostra a bandeira temporariamente
     setShowFlag(true);
 
+    // Alterna o idioma
+    const newLanguage = language === "pt" ? "en" : "pt";
+    setLanguage(newLanguage);
+
+    // Esconde a bandeira após um tempo
     setTimeout(() => {
-      setLanguage(nextLanguage);
       setShowFlag(false);
-    }, 800); // Tempo para exibir a bandeira antes de voltar ao globo
+    }, 1500);
   };
 
   return (
@@ -30,7 +35,7 @@ export function LangSwitcher() {
           showFlag ? "opacity-100 scale-110" : "opacity-0 scale-90"
         }`}
       >
-        {showFlag ?? language === "en" ? "🇺🇸" : "🇧🇷"}
+        {language === "en" ? "🇺🇸" : "🇧🇷"}
       </span>
       <Globe
         className={`size-5 transition-opacity duration-700 ${

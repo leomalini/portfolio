@@ -13,10 +13,13 @@ import { Menu, Home } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./sheet";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { type FloatingNavProps } from "@/types/floating-nav.type";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LangSwitcher } from "../language-switcher";
 
 export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,13 +64,13 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
               href={navItem.link}
               className="relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             >
-              <span className="text-sm">{navItem.name}</span>
+              <span className="text-sm">{t(navItem.key)}</span>
             </Link>
           ))}
         </div>
 
         <div className="flex items-center space-x-4">
-          {/* <LangSwitcher /> */}
+          <LangSwitcher />
           <ModeToggle />
           <Sheet>
             <SheetTrigger className="sm:hidden">
@@ -77,9 +80,9 @@ export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
               <DialogTitle />
               <nav className="grid gap-6 text-lg font-medium">
                 {navItems.map((item) => (
-                  <SheetClose asChild key={item.name}>
+                  <SheetClose asChild key={item.key}>
                     <Link href={item.link} className={cn("text-foreground")}>
-                      {item.name}
+                      {t(item.key)}
                     </Link>
                   </SheetClose>
                 ))}

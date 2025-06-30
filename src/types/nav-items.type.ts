@@ -1,7 +1,7 @@
 import { JSX } from "react";
 
 export interface NavItemProps {
-  name: string;
+  key: string;
   link: string;
   icon: JSX.Element;
 }

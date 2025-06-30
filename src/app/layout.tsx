@@ -6,6 +6,7 @@ import { FloatingNav } from "@/components/ui/navbar";
 import { navItems } from "@/utils/nav-items";
 import Footer from "@/components/footer";
 import { Analytics } from "@vercel/analytics/next";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,19 +43,21 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <FloatingNav navItems={navItems} />
-          <main className="min-h-screen flex flex-col gap-6  items-center justify-center space-y-12 px-10 py-10 pt-20 md:pt-32">
-            {children}
-            <Analytics />
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <FloatingNav navItems={navItems} />
+            <main className="min-h-screen flex flex-col gap-6  items-center justify-center space-y-12 px-10 py-10 pt-20 md:pt-32">
+              {children}
+              <Analytics />
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

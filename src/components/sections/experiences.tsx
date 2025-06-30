@@ -9,14 +9,20 @@ import {
   TimelineItem,
   TimelineLine,
 } from "@/components/ui/timeline";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useExperiences } from "@/utils/experiences";
 import Link from "next/link";
-import { experiences } from "@/utils/experiences";
 
 export const Experiences = () => {
+  const experiences = useExperiences();
+  const { t } = useLanguage();
+
   return (
     <section id="experiences" className="container">
       <div className="flex flex-col  gap-8 md:gap-12 items-center justify-center">
-        <p className="text-start w-full font-bold text-4xl">Experiências</p>
+        <p className="text-start w-full font-bold text-4xl">
+          {t("experiences")}
+        </p>
         <Tabs
           defaultValue="globalsys"
           orientation="vertical"
@@ -71,12 +77,19 @@ export const Experiences = () => {
                         <p className="font-normal text-sm text-muted-foreground">
                           {item.position.period}
                         </p>
-                        <p className="font-normal text-base text-muted-foreground">
-                          {item.position.responsibilities}
-                        </p>
+                        {item.position.responsibilities.map((resp, index) => {
+                          return (
+                            <p
+                              className="font-normal text-base text-muted-foreground"
+                              key={index}
+                            >
+                              {resp}
+                            </p>
+                          );
+                        })}
                         <div className="flex flex-row gap-2">
                           <p className="font-normal text-sm text-muted-foreground">
-                            Tecnologias utilizadas:
+                            {t("tech_used")}
                           </p>
                           <div className="flex flex-row gap-2">
                             {item.position.technologies.map((tech) => (

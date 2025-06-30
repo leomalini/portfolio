@@ -1,10 +1,12 @@
 "use client";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 export const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const { t } = useLanguage();
 
   return (
     <section id="sobre" className="container py-12" ref={ref}>
@@ -22,13 +24,13 @@ export const About = () => {
             className="flex flex-col justify-between items-center"
           >
             <h2 className="max-w-4xl text-5xl font-bold md:text-5xl lg:text-6xl text-center">
-              Olá, me chamo{" "}
+              {t("hero_greeting")}{" "}
               <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                Leonardo!
+                {t("hero_name")}
               </span>
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground mt-4 max-w-lg text-center">
-            Bem-vindo ao meu portfólio, onde apresento meus projetos, habilidades e experiências.
+              {t("hero_description")}
             </p>
           </motion.div>
         </div>

@@ -1,40 +1,40 @@
+// hooks/useProjects.ts
+import { useLanguage } from "@/contexts/LanguageContext";
 import { type ProjectCardProps } from "@/types/project-card.type";
 
-export const projects: ProjectCardProps[] = [
-  {
-    img: "/images/NLW.png",
-    title: "NLW Connect",
-    description:
-      "O projeto é um site responsivo de inscrição e indicação para eventos. Esse é um projeto do evento NLW Connect, um dos conteúdos disponíveis para alunos da Rocketseat.",
-    techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
-    urlRepository: "https://github.com/leomalini/NLW-Connect",
-  },
-  {
-    img: "/images/Contatos.png",
-    title: "Sistema de Cadastro de Contatos",
-    description:
-      "Um sistema web para gerenciamento de contatos, desenvolvido com foco em segurança e eficiência. Conta com criptografia para armazenamento de senhas e um mecanismo de recuperação via e-mail. A aplicação utiliza ASP.NET MVC para estruturação e SQL Server para armazenamento de dados, garantindo escalabilidade e alto desempenho.",
-    techs: ["ASP.NET MVC", "C#", "SQL Server", "Entity Framework"],
-    urlRepository: "https://github.com/leomalini/Sistema-CadastroContatos",
-  },
-  {
-    urlSite: "https://leonardocoradini.vercel.app/",
-    img: "/images/portfolioImg.png",
-    title: "Portfólio Pessoal",
-    description:
-      "Meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências.",
-    techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
-    urlRepository: "https://github.com/leomalini/portfolio",
-  },
-  {
-    urlSite: "https://manzoli-services.vercel.app/",
-    img: "/images/Manzoli.png",
-    title: "Manzoli Services",
-    description:
-      "Site institucional desenvolvido para a empresa Manzoli Services, especializada em limpeza residencial. O projeto apresenta os serviços oferecidos, diferenciais da empresa e permite fácil contato com os clientes. Totalmente responsivo e otimizado para performance.",
-    techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
-    urlRepository: "",
-  },
-];
+export const useProjects = (): ProjectCardProps[] => {
+  const { t } = useLanguage();
 
-export default projects;
+  return [
+    {
+      img: "/images/NLW.png",
+      title: t("nlw_connect_title"),
+      description: t("nlw_connect_description"),
+      techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+      urlRepository: "https://github.com/leomalini/NLW-Connect",
+    },
+    {
+      img: "/images/Contatos.png",
+      title: t("contact_system_title"),
+      description: t("contact_system_description"),
+      techs: ["ASP.NET MVC", "C#", "SQL Server", "Entity Framework"],
+      urlRepository: "https://github.com/leomalini/Sistema-CadastroContatos",
+    },
+    {
+      urlSite: "https://leonardocoradini.vercel.app/",
+      img: "/images/portfolioImg.png",
+      title: t("personal_portfolio_title"),
+      description: t("personal_portfolio_description"),
+      techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+      urlRepository: "https://github.com/leomalini/portfolio",
+    },
+    {
+      urlSite: "https://manzoli-services.vercel.app/",
+      img: "/images/Manzoli.png",
+      title: t("manzoli_services_title"),
+      description: t("manzoli_services_description"),
+      techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+      urlRepository: "",
+    },
+  ];
+};
