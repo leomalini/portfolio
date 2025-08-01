@@ -36,5 +36,21 @@ export const useProjects = (): ProjectCardProps[] => {
       techs: ["React", "Next.js", "TypeScript", "TailwindCSS"],
       urlRepository: "",
     },
+    {
+      urlSite: "https://tdd-todo-list.vercel.app/",
+      img: "/images/tdd-image.png",
+      title: t("tdd_todo_title"),
+      description: t("tdd_todo_description"),
+      techs: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "TailwindCSS",
+        "TDD",
+        "Vitest",
+        "React Testing Library",
+      ],
+      urlRepository: "https://github.com/leomalini/tdd-todo-list",
+    },
   ];
 };

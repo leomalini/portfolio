@@ -160,4 +160,13 @@ export const translations: Translations = {
     pt: "Site institucional desenvolvido para a empresa Manzoli Services, especializada em limpeza residencial. O projeto apresenta os serviços oferecidos, diferenciais da empresa e permite fácil contato com os clientes. Totalmente responsivo e otimizado para performance.",
     en: "Institutional website developed for Manzoli Services, a company specialized in residential cleaning. The project presents the services offered, company differentials and allows easy contact with customers. Fully responsive and performance optimized.",
   },
+
+  tdd_todo_title: {
+    pt: "ToDo List com TDD",
+    en: "TpDo List with TDD",
+  },
+  tdd_todo_description: {
+    pt: "Uma aplicação web para gerenciamento de tarefas, desenvolvida com foco em qualidade de código e boas práticas de testes automatizados. Utiliza a abordagem TDD (Test-Driven Development) para guiar a implementação de funcionalidades, garantindo robustez desde as fases iniciais do desenvolvimento. A aplicação foi construída com React e TypeScript, utilizando Jest e React Testing Library para testes unitários, promovendo alta confiabilidade e fácil manutenção.",
+    en: "A web application for task management, developed with a strong focus on code quality and best practices in automated testing. It follows the Test-Driven Development (TDD) approach to guide feature implementation, ensuring robustness from the early stages of development. The application is built with React and TypeScript, using Jest and React Testing Library for unit testing, promoting high reliability and maintainability.",
+  },
 };
