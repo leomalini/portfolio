@@ -161,6 +161,7 @@ export const translations: Translations = {
     en: "Institutional website developed for Manzoli Services, a company specialized in residential cleaning. The project presents the services offered, company differentials and allows easy contact with customers. Fully responsive and performance optimized.",
   },
 
+  // TDD ToDo List
   tdd_todo_title: {
     pt: "ToDo List com TDD",
     en: "TpDo List with TDD",
