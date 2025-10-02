@@ -40,35 +40,62 @@ export const translations: Translations = {
   },
 
   // Globalsys
+  // Globalsys
   globalsys_description: {
     pt: "A Globalsys é uma empresa brasileira de TI, fundada em 2008 em Vila Velha, ES, focada em transformação digital, administração de bancos de dados e soluções personalizadas como sistemas web e mobile, atendendo diversos setores com tecnologia inovadora.",
     en: "Globalsys is a Brazilian IT company, founded in 2008 in Vila Velha, ES, focused on digital transformation, database administration and customized solutions such as web and mobile systems, serving various sectors with innovative technology.",
   },
+
   globalsys_position: {
+    pt: "Desenvolvedor FrontEnd Jr.",
+    en: "Junior Frontend Developer",
+  },
+  globalsys_period: {
+    pt: "Set 2025 - Atual",
+    en: "Sep 2025 - Present",
+  },
+  globalsys_responsibility_1: {
+    pt: "Contribuí na construção de um marketplace completo, implementando funcionalidades voltadas à experiência do usuário e ao fluxo de compras.",
+    en: "Contributed to building a complete marketplace, implementing features focused on user experience and purchase flow.",
+  },
+  globalsys_responsibility_2: {
+    pt: "Participei da integração e consumo de APIs GraphQL para gerenciar produtos, pedidos e pagamentos no marketplace.",
+    en: "Participated in integrating and consuming GraphQL APIs to manage products, orders, and payments in the marketplace.",
+  },
+  globalsys_responsibility_3: {
+    pt: "Colaborei na migração de módulos para TypeScript, garantindo maior escalabilidade e segurança de tipagem no desenvolvimento do marketplace.",
+    en: "Collaborated in migrating modules to TypeScript, ensuring greater scalability and type safety in marketplace development.",
+  },
+  globalsys_responsibility_4: {
+    pt: "Atuei na melhoria de performance e otimização da aplicação web, aplicando boas práticas de carregamento, renderização e organização de código.",
+    en: "Worked on improving performance and optimization of the web application, applying best practices in loading, rendering, and code organization.",
+  },
+
+  globalsys_position_2: {
     pt: "Estagiário FrontEnd",
     en: "Frontend Intern",
   },
-  globalsys_period: {
-    pt: "Jun 2024 - Atual",
-    en: "Jun 2024 - Present",
+  globalsys_period_2: {
+    pt: "Jun 2024 - Ago 2025",
+    en: "Jun 2024 - Ago 2025",
   },
-  globalsys_responsibility_1: {
+  globalsys_responsibility2_1: {
     pt: "Auxiliei no desenvolvimento de novas funcionalidades e correção de bugs, contribuindo para a melhoria contínua e estabilidade do software.",
     en: "Assisted in developing new features and fixing bugs, contributing to continuous improvement and software stability.",
   },
-  globalsys_responsibility_2: {
+  globalsys_responsibility2_2: {
     pt: "Ajudei a manter a performance do frontend, garantindo uma experiência de usuário otimizada.",
     en: "Helped maintain frontend performance, ensuring an optimized user experience.",
   },
-  globalsys_responsibility_3: {
+  globalsys_responsibility2_3: {
     pt: "Participei de reuniões de produto para discutir e idealizar melhorias, apoiando o crescimento estratégico da plataforma.",
     en: "Participated in product meetings to discuss and idealize improvements, supporting the strategic growth of the platform.",
   },
-  globalsys_responsibility_4: {
+  globalsys_responsibility2_4: {
     pt: "Colaborei com equipes multifuncionais para alinhar os esforços de desenvolvimento aos objetivos do negócio e às necessidades dos usuários.",
     en: "Collaborated with cross-functional teams to align development efforts with business objectives and user needs.",
   },
-  globalsys_responsibility_5: {
+  globalsys_responsibility2_5: {
     pt: "Trabalhei na criação de protótipos e implementação de componentes interativos utilizando React, TypeScript e Next.js.",
     en: "Worked on creating prototypes and implementing interactive components using React, TypeScript and Next.js.",
   },

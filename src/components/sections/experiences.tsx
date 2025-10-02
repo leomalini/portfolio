@@ -39,60 +39,57 @@ export const Experiences = () => {
                   <span className="flex flex-row gap-1 items-center w-full mr-3">
                     {item.company.name}
                   </span>
-                  {item.position.active && (
+                  {item.active && (
                     <span className="mx-1 inline-block h-3 w-3 rounded-full bg-green-300" />
                   )}
                 </TabsTrigger>
               );
             })}
           </TabsList>
-          {experiences.map((item) => {
-            return (
-              <TabsContent
-                key={item.key}
-                value={item.key}
-                className="bg-muted rounded-lg w-full mt-0 p-4"
-              >
-                <div className="flex flex-col p-2 gap-2">
-                  <Link href={item.company.url} target="_blank">
-                    <p className="font-semibold text-2xl hover:underline underline-offset-4">
-                      {item.company.name}
-                    </p>
-                  </Link>
-                  <p className="font-normal text-base text-muted-foreground">
-                    {item.company.description}
+          {experiences.map((item) => (
+            <TabsContent
+              key={item.key}
+              value={item.key}
+              className="bg-muted rounded-lg w-full mt-0 p-4"
+            >
+              <div className="flex flex-col p-2 gap-2">
+                <Link href={item.company.url} target="_blank">
+                  <p className="font-semibold text-2xl hover:underline underline-offset-4">
+                    {item.company.name}
                   </p>
-                </div>
-                <Timeline>
-                  <TimelineItem>
+                </Link>
+                <p className="font-normal text-base text-muted-foreground">
+                  {item.company.description}
+                </p>
+              </div>
+
+              <Timeline>
+                {item.positions.map((pos, i) => (
+                  <TimelineItem key={i}>
                     <TimelineHeading className="font-semibold text-lg text-foreground">
-                      {item.position.title}
+                      {pos.title}
                     </TimelineHeading>
-                    <TimelineDot
-                      status={item.position.active ? "done" : "default"}
-                    />
+                    <TimelineDot status={pos.active ? "done" : "default"} />
                     <TimelineLine />
                     <TimelineContent>
                       <div className="flex flex-col gap-1">
                         <p className="font-normal text-sm text-muted-foreground">
-                          {item.position.period}
+                          {pos.period}
                         </p>
-                        {item.position.responsibilities.map((resp, index) => {
-                          return (
-                            <p
-                              className="font-normal text-base text-muted-foreground"
-                              key={index}
-                            >
-                              {resp}
-                            </p>
-                          );
-                        })}
+                        {pos.responsibilities.map((resp, index) => (
+                          <p
+                            className="font-normal text-base text-muted-foreground"
+                            key={index}
+                          >
+                            {resp}
+                          </p>
+                        ))}
                         <div className="flex flex-row gap-2">
                           <p className="font-normal text-sm text-muted-foreground">
                             {t("tech_used")}
                           </p>
                           <div className="flex flex-row gap-2">
-                            {item.position.technologies.map((tech) => (
+                            {pos.technologies.map((tech) => (
                               <Link
                                 key={tech.name}
                                 href={tech.url}
@@ -106,10 +103,10 @@ export const Experiences = () => {
                       </div>
                     </TimelineContent>
                   </TimelineItem>
-                </Timeline>
-              </TabsContent>
-            );
-          })}
+                ))}
+              </Timeline>
+            </TabsContent>
+          ))}
         </Tabs>
       </div>
     </section>

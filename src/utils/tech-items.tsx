@@ -1,4 +1,5 @@
 import { GitIcon } from "@/components/icons/git-icon";
+import { GraphqlIcon } from "@/components/icons/graphql-icon";
 import { JavaScriptIcon } from "@/components/icons/javascript-icon";
 import { NextIcon } from "@/components/icons/next-icon";
 import { NodeIcon } from "@/components/icons/node-icon";
@@ -35,6 +36,10 @@ const techCards: TechCardProps[] = [
   {
     icon: <GitIcon />,
     title: "Git",
+  },
+  {
+    icon: <GraphqlIcon className="h-10 w-10" />,
+    title: "GraphQL",
   },
 ];
 
