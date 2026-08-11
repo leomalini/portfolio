@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 const timelineVariants = cva("grid", {
   variants: {
     positions: {
-      left: "[&>li]:grid-cols-[0_min-content_1fr]",
-      right: "[&>li]:grid-cols-[1fr_min-content]",
-      center: "[&>li]:grid-cols-[1fr_min-content_1fr]",
+      left: "[&>li]:grid-cols-[0_min-content_minmax(0,1fr)]",
+      right: "[&>li]:grid-cols-[minmax(0,1fr)_min-content]",
+      center: "[&>li]:grid-cols-[minmax(0,1fr)_min-content_minmax(0,1fr)]",
     },
   },
   defaultVariants: {
@@ -104,7 +104,7 @@ const TimelineDot = React.forwardRef<HTMLDivElement, TimelineDotProps>(
 TimelineDot.displayName = "TimelineDot";
 
 const timelineContentVariants = cva(
-  "row-start-2 row-end-2 pb-8 text-muted-foreground",
+  "row-start-2 row-end-2 min-w-0 pb-8 text-muted-foreground",
   {
     variants: {
       side: {
@@ -134,7 +134,7 @@ const TimelineContent = React.forwardRef<HTMLDivElement, TimelineContentProps>(
 TimelineContent.displayName = "TimelineContent";
 
 const timelineHeadingVariants = cva(
-  "row-start-1 row-end-1 line-clamp-1 max-w-full truncate",
+  "row-start-1 row-end-1 max-w-full break-words",
   {
     variants: {
       side: {

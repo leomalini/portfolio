@@ -1,3 +1,5 @@
+import { CSharpIcon } from "@/components/icons/c-sharp-icon";
+import { DotNetIcon } from "@/components/icons/dot-net-icon";
 import { GitIcon } from "@/components/icons/git-icon";
 import { GraphqlIcon } from "@/components/icons/graphql-icon";
 import { JavaScriptIcon } from "@/components/icons/javascript-icon";
@@ -40,6 +42,14 @@ const techCards: TechCardProps[] = [
   {
     icon: <GraphqlIcon className="h-10 w-10" />,
     title: "GraphQL",
+  },
+  {
+    icon: <CSharpIcon className="h-10 w-10" />,
+    title: "C#",
+  },
+  {
+    icon: <DotNetIcon className="h-10 w-10" />,
+    title: ".NET",
   },
 ];
 

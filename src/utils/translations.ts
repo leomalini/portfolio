@@ -47,28 +47,32 @@ export const translations: Translations = {
   },
 
   globalsys_position: {
-    pt: "Desenvolvedor FrontEnd Jr.",
-    en: "Junior Frontend Developer",
+    pt: "Desenvolvedor Full Stack",
+    en: "Full Stack Developer",
   },
   globalsys_period: {
     pt: "Set 2025 - Atual",
     en: "Sep 2025 - Present",
   },
   globalsys_responsibility_1: {
-    pt: "Contribuí na construção de um marketplace completo, implementando funcionalidades voltadas à experiência do usuário e ao fluxo de compras.",
-    en: "Contributed to building a complete marketplace, implementing features focused on user experience and purchase flow.",
+    pt: "Contribuí na construção de um marketplace completo, atuando tanto no frontend quanto no backend, implementando funcionalidades voltadas à experiência do usuário e ao fluxo de compras.",
+    en: "Contributed to building a complete marketplace, working on both frontend and backend, implementing features focused on user experience and purchase flow.",
   },
   globalsys_responsibility_2: {
+    pt: "Desenvolvi e mantive APIs e serviços no backend utilizando C# e .NET, seguindo boas práticas de arquitetura e organização de código.",
+    en: "Developed and maintained backend APIs and services using C# and .NET, following architecture and code organization best practices.",
+  },
+  globalsys_responsibility_3: {
     pt: "Participei da integração e consumo de APIs GraphQL para gerenciar produtos, pedidos e pagamentos no marketplace.",
     en: "Participated in integrating and consuming GraphQL APIs to manage products, orders, and payments in the marketplace.",
   },
-  globalsys_responsibility_3: {
+  globalsys_responsibility_4: {
     pt: "Colaborei na migração de módulos para TypeScript, garantindo maior escalabilidade e segurança de tipagem no desenvolvimento do marketplace.",
     en: "Collaborated in migrating modules to TypeScript, ensuring greater scalability and type safety in marketplace development.",
   },
-  globalsys_responsibility_4: {
-    pt: "Atuei na melhoria de performance e otimização da aplicação web, aplicando boas práticas de carregamento, renderização e organização de código.",
-    en: "Worked on improving performance and optimization of the web application, applying best practices in loading, rendering, and code organization.",
+  globalsys_responsibility_5: {
+    pt: "Atuei na melhoria de performance e otimização da aplicação, tanto no frontend quanto no backend, aplicando boas práticas de carregamento, renderização e organização de código.",
+    en: "Worked on improving performance and optimization of the application, on both frontend and backend, applying best practices in loading, rendering, and code organization.",
   },
 
   globalsys_position_2: {

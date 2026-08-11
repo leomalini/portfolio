@@ -32,6 +32,7 @@ export const useExperiences = () => {
             t("globalsys_responsibility_2"),
             t("globalsys_responsibility_3"),
             t("globalsys_responsibility_4"),
+            t("globalsys_responsibility_5"),
           ],
           technologies: [
             {
@@ -58,6 +59,16 @@ export const useExperiences = () => {
               name: "Next.js",
               url: "https://nextjs.org/",
               icon: <NextIcon className="size-5" />,
+            },
+            {
+              name: "C#",
+              url: "https://dotnet.microsoft.com/pt-br/languages/csharp",
+              icon: <CSharpIcon className="size-5" />,
+            },
+            {
+              name: ".NET",
+              url: "https://learn.microsoft.com/pt-br/dotnet/",
+              icon: <DotNetIcon className="size-5" />,
             },
             {
               name: "GitHub",
