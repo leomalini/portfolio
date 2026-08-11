@@ -43,7 +43,6 @@ export const translations: Translations = {
   // Globalsys
   globalsys_description: {
     pt: "A Globalsys é uma empresa brasileira de TI, fundada em 2008 em Vila Velha, ES, focada em transformação digital, administração de bancos de dados e soluções personalizadas como sistemas web e mobile, atendendo diversos setores com tecnologia inovadora.",
-
     en: "Globalsys is a Brazilian IT company, founded in 2008 in Vila Velha, ES, focused on digital transformation, database administration and customized solutions such as web and mobile systems, serving various sectors with innovative technology.",
   },
 
